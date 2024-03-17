@@ -1,0 +1,10 @@
+Créez les fonctions qui remplissent l'écran
+lorsque vous cliquez sur les boutons
+numériques. Vous devez stocker
+la "valeur d'affichage" dans une variable
+quelque part pour l'utiliser à l'étape
+suivante.
+
+#creer une fonctions qui prend l'element puis l'affiche 
+prend lelement en param 
+et le mettre dans le span +=
