@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="bookTitle" placeholder="Title" required>
+        <input type="text" id="bookAuthor" placeholder="Author" required>
+        <input type="text" id="bookPages" placeholder="Pages" required>
+        <input type="text" id="bookRead" placeholder="read" required>
+        <input type="button" value="Add a book" onclick="addBookToLibrary()">
+    </div>
+    <table id="displayTab">
+        <caption>
+            Books in the library
+        </caption>
+        <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Pages</td>
+            <td>Read</td>
+        </tr>
+    </table>
+</body>
+</html>
