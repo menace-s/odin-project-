@@ -8,13 +8,19 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div>
-        <input type="text" id="bookTitle" placeholder="Title" required>
-        <input type="text" id="bookAuthor" placeholder="Author" required>
-        <input type="text" id="bookPages" placeholder="Pages" required>
-        <input type="text" id="bookRead" placeholder="read" required>
-        <input type="button" value="Add a book" onclick="addBookToLibrary()">
-    </div>
+    <button class="open-button" onclick="openForm()">Nouveau Livre</button>
+
+<div class="form-popup" id="myForm">
+  <form method="get" class="form-container">
+    <h1>Nouveau livre</h1>
+    <input type="text" placeholder="Titre" name="Title" id="bookTitle" autocomplete="off" required>
+    <input type="text" placeholder="Autheur" name="Author" id="bookAuthor" autocomplete="off" required>
+    <input type="text" placeholder="Pages" name="Pages" id="bookPages" autocomplete="off" required>
+    <input type="text" placeholder="Read" name="Read" id="bookRead" autocomplete="off" required>
+    <button type="submit" id="submitBtn" class="btn">Ajouter</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+  </form>
+</div>
     <table id="displayTab">
         <caption>
             Books in the library
