@@ -18,6 +18,7 @@ caption {
 }
 th,
 td {
+  text-align: center;
   border: 1px solid rgb(160 160 160);
   padding: 8px 10px;
 }
